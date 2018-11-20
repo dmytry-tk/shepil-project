@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru" class = "html-fixed  main-html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">	
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<meta name ="apple-mobile-web-app-status-bar-style" content ="#000000">
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Page</title>
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="favicon"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="transparent"><meta name="application-name" content="favicon"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"><link rel="shortcut icon" href="icons/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-1536x2008.png"><link href="css/main-app.css" rel="stylesheet"></head>
+<style>
+	.line-box{
+		width: 300px;
+		height: 2px;
+		position: absolute;
+		left: calc(50% - 150px);
+		top: calc(50% - 0.5px);
+		overflow: hidden;
+		z-index: 5;
+	}
+	.line-box::after{
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 15%;
+		right: 0;
+		top: 0;
+		z-index: 2;
+		background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 70%, rgba(255,255,255,1));
+	}
+	.line-box::before{
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 15%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1) 70%, rgba(255,255,255,1));
+	}
+	.line-box .line{
+		width: 300px;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		height: 1px;
+		background-color: rgba(0,0,0,.5);
+		animation: line-preload 1s linear infinite;
+	}
+	@keyframes line-preload{
+	0%{
+		left: -100%;
+		opacity: 0.9;}
+	20%{
+		left: -100%;
+	}
+	50%{
+		opacity: 0.5;
+	}
+
+	100%{
+		left: 100%;
+		opacity: 0.9;
+	}
+	}
+	
+</style>
+<div class="wrapper index-page">
+	<body>
+		
+<div class="preloader">
+	<div class="top">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	<div class="bottom"></div>
+	<div class="title">PAVEL SHEPIL</div>
+	<div class="line-box"><div class="line"></div></div>
+</div>
+		<header>
+	<div class="wrap">
+		<div class="container">
+			<div class="item">
+				<a href = "#" class="logo noselect">shepil</a>
+			</div>
+			<div class="item menu">
+				<div>
+					<div class="link drop-open">Product</div>
+				</div>
+				<a href="#" class="link">Projects</a>
+				<a href="#" class="link">News</a>
+				<a href="#" class="link">About us</a>
+				<a href="#" class="link">Contacts</a>
+			</div>
+			<div class="item lang-item">
+				<div class="language-container">
+					<div class="checked-lang"><span class = "language">EN</span></div>
+					<div class="lang-box">
+						<a href = "#" class="lang">EN</a>
+						<a href = "#" class="lang">UK</a>
+						<a href = "#" class="lang">RU</a>
+						<a href = "#" class="lang">DE</a>
+					</div>
+				</div>
+			</div>
+			<div class="item burger-box">
+				<div class="burger-cont">
+					<div class="burger">
+						<span class = "line top"></span>
+						<span class = "line middle"></span>
+						<span class = "line bottom"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- styles for this in header.sass -->
+<div class="drop-down-components desktop">
+	<div class="wrap">
+		<span class="close-components"><div class="cansel-template ">
+	<div class="right line"></div>
+	<div class="left line"></div>
+	<div class="right-top line"></div>
+	<div class="left-top line"></div>
+</div></span>
+		<div class="container">
+			<div class="scroll-container">
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product1.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product2.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product3.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product4.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- styles for this in header.sass -->
+<div class="mobile-menu">
+	<div></div>
+	<div class="menu">
+		<div>
+			<div class="link drop-open">Product <span class="arrow"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"
+	 xml:space="preserve" class = "fill">
+<g>
+	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span></div>
+		</div>
+		<div class="container">
+			<div class="box-scroll">
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product1.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product2.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product3.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product4.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+			</div>
+		</div>
+		<a href="#" class="link">Projects</a>
+		<a href="#" class="link">News</a>
+		<a href="#" class="link">About us</a>
+		<a href="#" class="link">Contacts</a>
+	</div>
+	<div class="lang">
+	 	<a href = "#" class="lang active">EN</a>
+		<a href = "#" class="lang">UK</a>
+		<a href = "#" class="lang">RU</a>
+		<a href = "#" class="lang">DE</a>
+	</div>
+</div>
+</header>
+
+				
+		<section class="main-section main">
+	<div class="bg-img" style = "background-image: url(img/main-bg.png);"></div>	
+	<div class="wrap">
+		<div class="h1">Every product has a history</div>
+		<a href = ".second-section" class="scroll-container scrollto">
+			<div class="scroll-box">
+				<div class="scroll"></div>	
+			</div>
+		</div>
+	</div>
+</section>
+<section class="history-section second-section">
+	<div class="wrap">
+		<div class="header-container-components block">
+			<div class="header">Our history</div>
+			<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet nisi nec lacus congue mollis. Etiam eget ornare mauris. Interdum et malesuada fames ac ante ipsum primis </div>
+			<a href="#" class="button">Show more</a>
+		</div>	
+	</div>
+</section>
+<section class="gallery-section">
+	<div class="mouse-move">Move  yor mouse to discover our products</div>
+	<div class="container-full-bg">
+		<div class="full-bg visible" style = "background-image: url(img/foto-5.jpg);"></div>		
+		<div class="full-bg" style = "background-image: url(img/foto-2.jpg);"></div>	
+		<div class="full-bg" style = "background-image: url(img/foto-3.jpg);"></div>	
+		<div class="full-bg" style = "background-image: url(img/foto-4.jpg);"></div>	
+		<div class="full-bg" style = "background-image: url(img/foto-1.jpg);"></div>	
+		<div class="full-bg" style = "background-image: url(img/foto-6.jpg);"></div>	
+	</div>
+	<div class="container-colls">
+		<div class="col-item" >
+			<div class="pulse-box  pulse-1">
+				<div class="circle-1 circle"></div>
+				<div class="circle-2 circle"></div>
+			</div>
+		</div>
+		<div class="col-item " >
+			<div class="pulse-box pulse-2">
+				<div class="circle-1 circle"></div>
+				<div class="circle-2 circle"></div>
+			</div>
+		</div>
+		<div class="col-item " >
+			<div class="pulse-box pulse-3">
+				<div class="circle-1 circle"></div>
+				<div class="circle-2 circle"></div>
+			</div>
+		</div>
+		<div class="col-item " >
+			<div class="pulse-box pulse-4">
+				<div class="circle-1 circle"></div>
+				<div class="circle-2 circle"></div>
+			</div>
+		</div>
+		<div class="col-item " >
+			<div class="pulse-box pulse-5">
+				<div class="circle-1 circle"></div>
+				<div class="circle-2 circle"></div>
+			</div>
+		</div>
+		<div class="col-item " >
+			<div class="pulse-box pulse-6">
+				<div class="circle-1 circle"></div>
+				<div class="circle-2 circle"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="slider-section">
+	<div class="header-container-components">
+		<div class="header">News</div>
+		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione error pariatur, numquam, odit vel? </div>
+	</div>
+	<div class="container-for-slider">
+		<div class="slider">
+			<div class="slide">
+				<a href = "#" class="item">
+					<div class="img"><img src = "img/foto-1.jpg" alt=""></div>
+					<img src="" alt="">
+					<div class="desc">Move  yor mouse to discover
+					our products</div>
+				</a>
+			</div>
+			<div class="slide">
+				<a href = "#" class="item">
+					<div class="img"><img src = "img/foto-2.jpg" alt=""></div>
+					<div class="desc">Move  yor mouse to discover
+					our products</div>
+				</a>
+			</div>
+			<div class="slide">
+				<a href = "#" class="item">
+					<div class="img"><img src = "img/foto-3.jpg" alt=""></div>
+					<div class="desc">Move  yor mouse to discover
+					our products</div>
+				</a>
+			</div>
+			<div class="slide">
+				<a href = "#" class="item">
+					<div class="img"><img src = "img/foto-4.jpg" alt=""></div>
+					<div class="desc">Move  yor mouse to discover
+					our products</div>
+				</a>
+			</div>
+			<div class="slide">
+				<a href = "#" class="item">
+					<div class="img"><img src = "img/foto-5.jpg" alt=""></div>
+					<div class="desc">Move  yor mouse to discover
+					our products</div>
+				</a>
+			</div>
+		</div>
+	</div>		
+	<a href = "#" class="button pause">Show all</a>
+</div>
+<div class="first-section">
+		<div class="bg-img" style = "background-image: url(img/last-banner.jpg);"></div>
+		<div class="h1">Uniqueness in every detail</div>
+	</div>
+<section class="history-section form-section">
+	<div class="wrap">
+		<form class="header-container-components">
+			<div class="header">Contact us</div>
+			<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nesciunt voluptate deserunt hic, quibusdam aliquid.</div>
+			<div class="input-box"><div class="placeholder">Name</div><input type="text" class="input" placeholder = "Name" required></div>
+			<div class="input-box"><div class="placeholder">Email</div><input type="email" class="input" placeholder = "Email" required></div>
+			<div class="input-box"><div class="placeholder">Message</div><textarea class = "input" placeholder = "Message"></textarea></div>
+			<input type="submit" id = "main-submit">
+			<label for="main-submit" class = "button">Send</label>
+		</form>	
+	</div>
+</section>		
+		
+		<footer>
+	<div class="wrap">
+		<div class="container">
+			<div class="item logo-item">
+				<a href = "#" class="logo">Shepil</a>
+			</div>
+			<div class="menu-item item">
+				<div>
+					<div class="link drop-open product-link">Product <span class="arrow"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"
+	 xml:space="preserve" class = "fill">
+<g>
+	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+					</div>
+				</div>
+				<div class="product-mobile cont">
+					<div class="box-scroll">
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product1.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product2.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product3.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product4.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+					</div>
+				</div>
+				<div>
+					<div class="link drop-open info-link">Info <span class="arrow"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"
+	 xml:space="preserve" class = "fill">
+<g>
+	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+					</div>
+				</div>
+				<div class="info-mobile cont">
+					<ul>
+						<li><a href="#">Guarantes</a></li>
+						<li><a href="#">One more</a></li>
+						<li><a href="#">One more</a></li>
+						<li><a href="#">One more</a></li>
+						<li><a href="#">Shapping and payment</a></li>
+					</ul>
+				</div>
+				<a href="#" class="link">Projects</a>
+				<a href="#" class="link">News</a>
+				<a href="#" class="link">About us</a>
+				<a href="#" class="link">Contacts</a>
+			</div>
+			<div class="item social-item">
+				<a href="#" target = "blank">FB</a>
+				<span class="line"></span>
+				<a href="#" target = "blank">INST</a>
+				<span class="line"></span>
+				<a href="#" target = "blank">PINT</a>
+			</div>
+			<div class="item copy-item"><span>Сopyright © SHEPIL 2018</span></div>
+			<div class="item design-item"><span>Design by</span> <a href="#" target = "blank">PERETZ AGENCY</a></div>
+		</div>
+	</div>
+	<!-- styles for this in header.sass -->
+<div class="drop-down-components desktop">
+	<div class="wrap">
+		<span class="close-components"><div class="cansel-template ">
+	<div class="right line"></div>
+	<div class="left line"></div>
+	<div class="right-top line"></div>
+	<div class="left-top line"></div>
+</div></span>
+		<div class="container">
+			<div class="scroll-container">
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product1.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product2.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product3.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product4.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="info-cont">
+		<div class="wrap">
+			<span class="close-components"><div class="cansel-template ">
+	<div class="right line"></div>
+	<div class="left line"></div>
+	<div class="right-top line"></div>
+	<div class="left-top line"></div>
+</div></span>
+			<a href="#">Shapping and Payment</a>
+			<a href="#">Guarantees</a>
+			<a href="#">One more</a>
+			<a href="#">One more</a>
+			<a href="#">One more</a>
+		</div>
+	</div>
+</footer>
+
+<div class="all-pages">
+	<div class="title">All pages</div>
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="one-news.html">Новость(раздел)</a></li>
+		<li><a href="news.html">Новости</a></li>
+		<li><a href="about.html">О Компании</a></li>
+		<li><a href="carta.html">Карта товара</a></li>
+		<li><a href="catalog.html">Каталог</a></li>
+		<li><a href="information.html">Информация</a></li>
+		<li><a href="contacts.html">Контакты</a></li>
+<!-- 		<li><a href="communications.html">Обратная связь</a></li> -->
+		<li><a href="thank-you.html">thank-you</a></li>
+		<li><a href="404.html">404</a></li>
+		<li><a href="projects.html">Проекты</a></li>
+<!-- 		<li><a href="example.html">Пример</a></li> -->
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="js/main-app.js"></script></body>
+</div>
+</html>

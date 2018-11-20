@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ru"  class = "lightScroll">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">	
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<meta name ="apple-mobile-web-app-status-bar-style" content ="#000000">
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Product-cart</title>
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="favicon"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="transparent"><meta name="application-name" content="favicon"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"><link rel="shortcut icon" href="icons/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons/apple-touch-startup-image-1536x2008.png"><link href="css/main-app.css" rel="stylesheet"></head>
+<div class="wrapper">
+	<body>
+		<div class="preloader-short">
+	<div class="container">
+		<div class="title">PAVEL SHEPIL</div>
+		<div class="line-box"><div class="line"></div></div>
+	</div>
+</div>
+		
+		<header>
+	<div class="wrap">
+		<div class="container">
+			<div class="item">
+				<a href = "#" class="logo noselect">shepil</a>
+			</div>
+			<div class="item menu">
+				<div>
+					<div class="link drop-open">Product</div>
+				</div>
+				<a href="#" class="link">Projects</a>
+				<a href="#" class="link">News</a>
+				<a href="#" class="link">About us</a>
+				<a href="#" class="link">Contacts</a>
+			</div>
+			<div class="item lang-item">
+				<div class="language-container">
+					<div class="checked-lang"><span class = "language">EN</span></div>
+					<div class="lang-box">
+						<a href = "#" class="lang">EN</a>
+						<a href = "#" class="lang">UK</a>
+						<a href = "#" class="lang">RU</a>
+						<a href = "#" class="lang">DE</a>
+					</div>
+				</div>
+			</div>
+			<div class="item burger-box">
+				<div class="burger-cont">
+					<div class="burger">
+						<span class = "line top"></span>
+						<span class = "line middle"></span>
+						<span class = "line bottom"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- styles for this in header.sass -->
+<div class="drop-down-components desktop">
+	<div class="wrap">
+		<span class="close-components"><div class="cansel-template ">
+	<div class="right line"></div>
+	<div class="left line"></div>
+	<div class="right-top line"></div>
+	<div class="left-top line"></div>
+</div></span>
+		<div class="container">
+			<div class="scroll-container">
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product1.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product2.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product3.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product4.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- styles for this in header.sass -->
+<div class="mobile-menu">
+	<div></div>
+	<div class="menu">
+		<div>
+			<div class="link drop-open">Product <span class="arrow"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"
+	 xml:space="preserve" class = "fill">
+<g>
+	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span></div>
+		</div>
+		<div class="container">
+			<div class="box-scroll">
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product1.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product2.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product3.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product4.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+			</div>
+		</div>
+		<a href="#" class="link">Projects</a>
+		<a href="#" class="link">News</a>
+		<a href="#" class="link">About us</a>
+		<a href="#" class="link">Contacts</a>
+	</div>
+	<div class="lang">
+	 	<a href = "#" class="lang active">EN</a>
+		<a href = "#" class="lang">UK</a>
+		<a href = "#" class="lang">RU</a>
+		<a href = "#" class="lang">DE</a>
+	</div>
+</div>
+</header>
+
+				
+		<div class="catalog-page">
+	<div class="catalog-footer">
+		<span class = "toggle"><span class = "filter">filter</span></span>
+	</div>
+	<div class="first-section">
+		<div class="bg-img" style = "background-image: url(img/catalog-bg.png);"></div>
+		<div class="h1">Catalog</div>
+	</div>
+	<div class="catalog-section">
+		<div class="wrap">
+			<div class="container">
+				<div class="left-page">
+					<div class="filter-container">
+						<div class="close"><div class="cansel-template ">
+	<div class="right line"></div>
+	<div class="left line"></div>
+	<div class="right-top line"></div>
+	<div class="left-top line"></div>
+</div></div>
+						<div class="filter-box">
+							<div class="drop-container">
+								<div class="title">Filter</div>
+								<div class="list-item">
+									<div class="list-title">Furniture type</div>
+									<ul class="drop-box">
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+									</ul>
+								</div>
+								<div class="list-item">
+									<div class="list-title">WOOD</div>
+									<ul class="drop-box">
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+									</ul>
+								</div>
+								<div class="list-item">
+									<div class="list-title">Location</div>
+									<ul class="drop-box">
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+									</ul>
+								</div>
+								<div class="list-item">
+									<div class="list-title">Price</div>
+									<ul class="drop-box">
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+										<li class="list-item">item</li>
+									</ul>
+								</div>
+							</div>
+							<div class="button-box">
+								<div class="button search">SEARCH</div>
+								<div class="button clear">CLEAR</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-page">
+					<div class="catalog-container">
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-6.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold active">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-1.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item ">
+							<div class="img"><img src="img/foto-5.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-3.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item ">
+							<div class="img"><img src="img/foto-4.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold active">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-6.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item ">
+							<div class="img"><img src="img/foto-2.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-6.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold active">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item ">
+							<div class="img"><img src="img/foto-4.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-3.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-5.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold">sold</span>
+							</span>	
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/foto-1.jpg" alt=""></div>
+							<div class="desc">Move your mouse for discover our projects</div>
+							<span class="price-box">
+								<span class="price">13 200$</span>
+								<span class="sold active">sold</span>
+							</span>	
+						</a>
+					</div>
+					<div class="pagination">
+						<div class=" arrow arrow-prev"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" class = "fill" width = "100%" height = "100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#000000;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</div>
+						<ul>
+							<li class = "active"><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+						</ul>
+						<div class=" arrow arrow-next"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" class = "fill" width = "100%" height = "100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#000000;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<section class="bread">
+		<div class="wrap">
+			<ul class="breadcrumbs">
+		      <li>
+		        <a href="index.html">Home</a>
+		      </li>
+		      <li class="current">News</li>
+		    </ul>
+		</div>
+	</section>
+</div>		
+		
+		<footer>
+	<div class="wrap">
+		<div class="container">
+			<div class="item logo-item">
+				<a href = "#" class="logo">Shepil</a>
+			</div>
+			<div class="menu-item item">
+				<div>
+					<div class="link drop-open product-link">Product <span class="arrow"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"
+	 xml:space="preserve" class = "fill">
+<g>
+	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+					</div>
+				</div>
+				<div class="product-mobile cont">
+					<div class="box-scroll">
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product1.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product2.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product3.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+						<a href = "#" class="item">
+							<div class="img"><img src="img/product4.png" alt=""></div>
+							<div class="desc">Move  yor mouse to discover our</div>
+						</a>
+					</div>
+				</div>
+				<div>
+					<div class="link drop-open info-link">Info <span class="arrow"><?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;"
+	 xml:space="preserve" class = "fill">
+<g>
+	<path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+		C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+		s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</span>
+					</div>
+				</div>
+				<div class="info-mobile cont">
+					<ul>
+						<li><a href="#">Guarantes</a></li>
+						<li><a href="#">One more</a></li>
+						<li><a href="#">One more</a></li>
+						<li><a href="#">One more</a></li>
+						<li><a href="#">Shapping and payment</a></li>
+					</ul>
+				</div>
+				<a href="#" class="link">Projects</a>
+				<a href="#" class="link">News</a>
+				<a href="#" class="link">About us</a>
+				<a href="#" class="link">Contacts</a>
+			</div>
+			<div class="item social-item">
+				<a href="#" target = "blank">FB</a>
+				<span class="line"></span>
+				<a href="#" target = "blank">INST</a>
+				<span class="line"></span>
+				<a href="#" target = "blank">PINT</a>
+			</div>
+			<div class="item copy-item"><span>Сopyright © SHEPIL 2018</span></div>
+			<div class="item design-item"><span>Design by</span> <a href="#" target = "blank">PERETZ AGENCY</a></div>
+		</div>
+	</div>
+	<!-- styles for this in header.sass -->
+<div class="drop-down-components desktop">
+	<div class="wrap">
+		<span class="close-components"><div class="cansel-template ">
+	<div class="right line"></div>
+	<div class="left line"></div>
+	<div class="right-top line"></div>
+	<div class="left-top line"></div>
+</div></span>
+		<div class="container">
+			<div class="scroll-container">
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product1.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product2.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product3.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+				<a href = "#" class="item">
+					<div class="img"><img src="img/product4.png" alt=""></div>
+					<div class="desc">Move  yor mouse to discover our</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="info-cont">
+		<div class="wrap">
+			<span class="close-components"><div class="cansel-template ">
+	<div class="right line"></div>
+	<div class="left line"></div>
+	<div class="right-top line"></div>
+	<div class="left-top line"></div>
+</div></span>
+			<a href="#">Shapping and Payment</a>
+			<a href="#">Guarantees</a>
+			<a href="#">One more</a>
+			<a href="#">One more</a>
+			<a href="#">One more</a>
+		</div>
+	</div>
+</footer>
+
+<div class="all-pages">
+	<div class="title">All pages</div>
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="one-news.html">Новость(раздел)</a></li>
+		<li><a href="news.html">Новости</a></li>
+		<li><a href="about.html">О Компании</a></li>
+		<li><a href="carta.html">Карта товара</a></li>
+		<li><a href="catalog.html">Каталог</a></li>
+		<li><a href="information.html">Информация</a></li>
+		<li><a href="contacts.html">Контакты</a></li>
+<!-- 		<li><a href="communications.html">Обратная связь</a></li> -->
+		<li><a href="thank-you.html">thank-you</a></li>
+		<li><a href="404.html">404</a></li>
+		<li><a href="projects.html">Проекты</a></li>
+<!-- 		<li><a href="example.html">Пример</a></li> -->
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="js/main-app.js"></script></body>
+</div>
+</html>
